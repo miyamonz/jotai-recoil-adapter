@@ -21,7 +21,7 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "jotai"],
+      external: ["react", "react-dom", "jotai", "jotai/utils"],
       output: {
         globals: {
           react: "React",
